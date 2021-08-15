@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap");
+* {
+  font-family: "Alegreya", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --font: white;
+  --yellow: #1a6803;
+}
+
+body {
+  background-image: url(./img/NgEKQj.jpg);
+  background-size: cover;
+}
+
+.heading {
+  text-align: center;
+  background-color: var(--yellow);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 0;
+  color: var(--font);
+}
+
+.container {
+  width: 45%;
+  margin: 20vh auto;
+}
+
+.container p {
+  background-color: white;
+  width: max-content;
+}
+
+#input-area {
+  display: block;
+  font-size: larger;
+  height: 8rem;
+  width: 100%;
+  border: 1px solid black;
+  padding: 1rem;
+  resize: none;
+}
+
+#input-area::placeholder {
+  font-size: larger;
+}
+
+#output {
+  background-color: white;
+  padding: 1rem;
+  height: 8rem;
+  border: 1px solid black;
+}
+
+#con-btn {
+  padding: 1rem;
+  background-color: var(--yellow);
+  border: none;
+  margin: 1rem 0;
+  font-size: large;
+  color: var(--font);
+}
+
+.about {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--yellow);
+}
+
+.center {
+  width: 45%;
+  padding: 1rem;
+  margin: auto;
+  color: var(--font);
+}
+
+@media /*(min-width: 320px) and*/ (max-width: 480px) /* Mobile */ {
+  body {
+    background-image: url(./img/mbg.jpg);
+    background-size: auto;
+  }
+
+  .heading {
+    font-size: small;
+    padding: 1rem;
+  }
+
+  .container,
+  .center {
+    /* margin: 49vh auto; */
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  #input-area,
+  #output {
+    height: 100px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .container p {
+    margin: auto;
+  }
+
+  #con-btn {
+    display: block;
+    margin: 1rem auto;
+  }
+}
+
+@media (min-width: 539px) and (max-width: 1024px) /* Tablet */ {
+  .container,
+  .center {
+    /* margin: 49vh auto; */
+    width: 80%;
+    padding: 1rem;
+  }
+}
